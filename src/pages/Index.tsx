@@ -1,34 +1,11 @@
 import { GitHubHeader } from "@/components/GitHubHeader";
 import { FileExplorer } from "@/components/FileExplorer";
 import { ReadmeSection } from "@/components/ReadmeSection";
-import { InteractiveStats } from "@/components/InteractiveStats";
-import { TypingAnimation } from "@/components/TypingAnimation";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background relative z-10">
+    <div className="min-h-screen bg-background">
       <GitHubHeader />
-      
-      {/* Hero Section with Typing Animation */}
-      <div className="container mx-auto px-4 py-12 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent">
-            Welcome to DevPortfolio
-          </h1>
-          <div className="text-xl md:text-2xl text-muted-foreground mb-8 h-16 flex items-center justify-center">
-            <TypingAnimation 
-              texts={[
-                "Building amazing web experiences",
-                "Crafting clean, efficient code",
-                "Solving complex problems",
-                "Learning new technologies daily"
-              ]}
-              className="font-mono"
-            />
-          </div>
-          <InteractiveStats />
-        </div>
-      </div>
       
       <div className="container mx-auto px-4 py-8">
         <div className="grid lg:grid-cols-3 gap-8">
