@@ -1,8 +1,8 @@
 import { GitHubHeader } from "@/components/GitHubHeader";
 import { FileExplorer } from "@/components/FileExplorer";
 import { ReadmeSection } from "@/components/ReadmeSection";
-import BooksReadSection from "@/components/BooksReadSection";
-import TechTalksSection from "@/components/TechTalksSection";
+import BooksPreview from "@/components/BooksPreview";
+import TechTalksPreview from "@/components/TechTalksPreview";
 
 const Index = () => {
   return (
@@ -70,14 +70,10 @@ const Index = () => {
         {/* README Section */}
         <ReadmeSection />
         
-        {/* Books Read Section */}
-        <div className="mt-12">
-          <BooksReadSection />
-        </div>
-        
-        {/* Tech Talks Section */}
-        <div className="mt-12">
-          <TechTalksSection />
+        {/* Preview Sections */}
+        <div className="mt-12 grid lg:grid-cols-2 gap-8">
+          <BooksPreview />
+          <TechTalksPreview />
         </div>
       </div>
     </div>
