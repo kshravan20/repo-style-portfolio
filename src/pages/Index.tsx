@@ -1,6 +1,8 @@
 import { GitHubHeader } from "@/components/GitHubHeader";
 import { FileExplorer } from "@/components/FileExplorer";
 import { ReadmeSection } from "@/components/ReadmeSection";
+import BooksReadSection from "@/components/BooksReadSection";
+import TechTalksSection from "@/components/TechTalksSection";
 
 const Index = () => {
   return (
@@ -67,6 +69,16 @@ const Index = () => {
         
         {/* README Section */}
         <ReadmeSection />
+        
+        {/* Books Read Section */}
+        <div className="mt-12">
+          <BooksReadSection />
+        </div>
+        
+        {/* Tech Talks Section */}
+        <div className="mt-12">
+          <TechTalksSection />
+        </div>
       </div>
     </div>
   );
